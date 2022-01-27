@@ -1,4 +1,4 @@
-include: "/models/**/thelook.model.lkml"
+include: "/models/**/thelook_partner.model.lkml"
 view: order_facts {
   view_label: "Order Facts"
   derived_table: {

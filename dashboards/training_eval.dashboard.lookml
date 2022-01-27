@@ -7,7 +7,7 @@
   elements:
   - title: Cluster Size by Iteration
     name: Cluster Size by Iteration
-    model: thelook
+    model: thelook_partner
     explore: ecomm_training_info
     type: looker_bar
     fields: [ecomm_training_info.iteration, cluster_info.centroid_id, cluster_info.cluster_size]
@@ -53,7 +53,7 @@
     height: 7
   - title: Loss By Iteration
     name: Loss By Iteration
-    model: thelook
+    model: thelook_partner
     explore: ecomm_training_info
     type: looker_area
     fields: [ecomm_training_info.loss, ecomm_training_info.iteration]
@@ -102,7 +102,7 @@
     height: 6
   - title: Number of Clusters Performance
     name: Number of Clusters Performance
-    model: thelook
+    model: thelook_partner
     explore: ecomm_training_info
     type: looker_line
     fields: [ecomm_model_eval.davies_bouldin_index, ecomm_model_eval.clusters_num]
@@ -149,7 +149,7 @@
     height: 6
   - title: Feature Info
     name: Feature Info
-    model: thelook
+    model: thelook_partner
     explore: ecomm_training_info
     type: looker_grid
     fields: [ecomm_feature_info.input, ecomm_feature_info.min, ecomm_feature_info.max,
@@ -276,7 +276,7 @@
     height: 2
   - title: Clusters
     name: Clusters
-    model: thelook
+    model: thelook_partner
     explore: ecomm_training_info
     type: looker_grid
     fields: [ecomm_model_eval.clusters_num]

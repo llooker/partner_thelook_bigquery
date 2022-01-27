@@ -16,7 +16,7 @@
   elements:
   - title: Total Orders
     name: Total Orders
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [order_items.order_count]
@@ -38,7 +38,7 @@
     height: 3
   - title: Total Customers
     name: Total Customers
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [users.count]
@@ -63,7 +63,7 @@
     height: 3
   - title: Average Order Value
     name: Average Order Value
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [order_items.average_sale_price]
@@ -89,7 +89,7 @@
     height: 3
   - title: Brand Traffic by Source, OS
     name: Brand Traffic by Source, OS
-    model: thelook
+    model: thelook_partner
     explore: events
     type: looker_donut_multiples
     fields: [users.traffic_source, events.count, device_type]
@@ -141,7 +141,7 @@
     height: 8
   - title: Top Product Categories - Cart vs Conversion
     name: Top Product Categories - Cart vs Conversion
-    model: thelook
+    model: thelook_partner
     explore: events
     type: looker_column
     fields: [product_viewed.category, sessions.cart_to_checkout_conversion, sessions.count_cart_or_later]
@@ -226,7 +226,7 @@
     height: 8
   - title: Sales and Sale Price Trend
     name: Sales and Sale Price Trend
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_line
     fields: [inventory_items.created_week, order_items.total_sale_price, order_items.average_sale_price]
@@ -295,7 +295,7 @@
     height: 7
   - title: Top Purchasers of Brand
     name: Top Purchasers of Brand
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_grid
     fields: [users.name, users.email, order_items.count, order_items.total_sale_price,
@@ -337,7 +337,7 @@
     height: 10
   - title: Purchasers of This Brand Also Bought (Brand Affinity)
     name: Purchasers of This Brand Also Bought (Brand Affinity)
-    model: thelook
+    model: thelook_partner
     explore: affinity
     type: looker_grid
     fields: [product_a.brand, product_b.brand, affinity.avg_order_affinity, affinity.avg_user_affinity,
@@ -419,7 +419,7 @@
     height: 9
   - title: Brand Share of Wallet over Customer Lifetime
     name: Brand Share of Wallet over Customer Lifetime
-    model: thelook
+    model: thelook_partner
     explore: orders_with_share_of_wallet_application
     type: looker_line
     fields: [order_items.months_since_signup, order_items_share_of_wallet.brand_share_of_wallet_within_company,
@@ -501,7 +501,7 @@
     height: 3
   - title: Customer Age
     name: Customer Age
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_column
     fields: [users.age_tier, order_items.total_sale_price, users.gender]
@@ -576,7 +576,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: thelook
+    model: thelook_partner
     explore: order_items
     listens_to_filters: []
     field: products.brand
@@ -590,7 +590,7 @@
       type: tag_list
       display: popover
       options: []
-    model: thelook
+    model: thelook_partner
     explore: events
     listens_to_filters: []
     field: product_viewed.brand
@@ -604,7 +604,7 @@
       type: checkboxes
       display: popover
       options: []
-    model: thelook
+    model: thelook_partner
     explore: order_items
     listens_to_filters: []
     field: users.age_tier
@@ -618,7 +618,7 @@
       type: tag_list
       display: popover
       options: []
-    model: thelook
+    model: thelook_partner
     explore: order_items
     listens_to_filters: []
     field: products.category

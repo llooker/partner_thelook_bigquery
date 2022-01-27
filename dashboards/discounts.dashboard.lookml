@@ -5,7 +5,7 @@
   elements:
   - title: E-Commerce Writeback
     name: E-Commerce Writeback
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_grid
     fields: [inventory_items.created_date, products.item_name, products.category,
@@ -63,7 +63,7 @@
     height: 17
   - title: Discounts
     name: Discounts
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_grid
     fields: [discounts.date_date, products.item_name, discounts.discount_price, discounts.discount_amount,
@@ -134,7 +134,7 @@
     height: 2
   - title: Discounted Items by Category
     name: Discounted Items by Category
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_bar
     fields: [products.category, products.count]
@@ -178,7 +178,7 @@
     height: 11
   - title: Discounts by Department
     name: Discounts by Department
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_pie
     fields: [products.count, products.department]
@@ -238,7 +238,7 @@
     default_value: 80 to 159
     allow_multiple_values: true
     required: false
-    model: thelook
+    model: thelook_partner
     explore: order_items
     listens_to_filters: []
     field: inventory_items.days_in_inventory_tier

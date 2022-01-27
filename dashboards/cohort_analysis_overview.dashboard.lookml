@@ -6,7 +6,7 @@
   elements:
   - title: Spend by Region
     name: Spend by Region
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_map
     fields: [users.count, users.state]
@@ -104,7 +104,7 @@
     height: 6
   - title: Top 5 Categories
     name: Top 5 Categories
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_bar
     fields: [products.category, order_items.count]
@@ -151,7 +151,7 @@
     height: 6
   - title: "#1 Brand"
     name: "#1 Brand"
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [products.brand, order_items.count]
@@ -213,7 +213,7 @@
     height: 2
   - title: "#2 Brand"
     name: "#2 Brand"
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [products.brand, order_items.count]
@@ -275,7 +275,7 @@
     height: 2
   - title: "#3 Brand"
     name: "#3 Brand"
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [products.brand, order_items.count]
@@ -346,7 +346,7 @@
     height: 2
   - title: Total Sales
     name: Total Sales
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [order_items.total_sale_price, order_items.created_month]
@@ -378,7 +378,7 @@
     height: 4
   - title: Total Dollars Returned
     name: Total Dollars Returned
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [order_items.created_month, order_items.total_sale_price]
@@ -440,7 +440,7 @@
     height: 4
   - title: New Users
     name: New Users
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [users.created_month, users.count]
@@ -504,7 +504,7 @@
     height: 4
   - title: Avg Unit Price
     name: Avg Unit Price
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [order_items.created_month, order_items.average_sale_price]
@@ -568,7 +568,7 @@
     height: 4
   - title: Top Spenders 💵
     name: Top Spenders 💵
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_grid
     fields: [users.name, users.email, order_items.total_sale_price]
@@ -629,7 +629,7 @@
     height: 6
   - title: Best Sellers 🎽
     name: Best Sellers 🎽
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_grid
     fields: [products.brand, products.item_name, products.count]
@@ -698,7 +698,7 @@
     height: 3
   - title: "#4 Brand"
     name: "#4 Brand"
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [products.brand, order_items.count]
@@ -760,7 +760,7 @@
     height: 2
   - title: "#5 Brand"
     name: "#5 Brand"
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [products.brand, order_items.count]
@@ -822,7 +822,7 @@
     height: 2
   - title: New Arrivals
     name: New Arrivals
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_grid
     fields: [products.item_name, inventory_items.created_date, ecomm_predict.centroid_label]
@@ -871,7 +871,7 @@
       type: button_group
       display: popover
       options: []
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     listens_to_filters: []
     field: ecomm_predict.centroid_label
@@ -885,7 +885,7 @@
       type: advanced
       display: popover
       options: []
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     listens_to_filters: []
     field: order_items.created_month

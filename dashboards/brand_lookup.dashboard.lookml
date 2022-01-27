@@ -19,7 +19,7 @@
   elements:
   - title: Total Orders
     name: Total Orders
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [order_items.order_count]
@@ -39,7 +39,7 @@
     height: 3
   - title: Total Customers
     name: Total Customers
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [users.count]
@@ -62,7 +62,7 @@
     height: 3
   - title: Average Order Value
     name: Average Order Value
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [order_items.average_sale_price]
@@ -86,7 +86,7 @@
     height: 3
   - title: Brand Traffic by Source, OS
     name: Brand Traffic by Source, OS
-    model: thelook
+    model: thelook_partner
     explore: events
     type: looker_donut_multiples
     fields: [users.traffic_source, events.os, events.count]
@@ -134,7 +134,7 @@
     height: 11
   - title: Top Product Categories - Cart vs Conversion
     name: Top Product Categories - Cart vs Conversion
-    model: thelook
+    model: thelook_partner
     explore: events
     type: looker_column
     fields: [product_viewed.category, sessions.overall_conversion, sessions.cart_to_checkout_conversion,
@@ -214,7 +214,7 @@
     height: 6
   - title: Top Visitors and Transaction History
     name: Top Visitors and Transaction History
-    model: thelook
+    model: thelook_partner
     explore: events
     type: looker_grid
     fields: [users.name, users.email, users.state, users.traffic_source, sessions.count]
@@ -255,7 +255,7 @@
     height: 8
   - title: Sales and Sale Price Trend
     name: Sales and Sale Price Trend
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_line
     fields: [order_items.created_date, order_items.total_sale_price, order_items.average_sale_price]
@@ -315,7 +315,7 @@
     height: 7
   - title: Top Purchasers of Brand
     name: Top Purchasers of Brand
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_grid
     fields: [users.name, users.email, order_items.count, order_items.total_sale_price,
@@ -347,7 +347,7 @@
     height: 8
   - title: Website Sessions by Hour of Day and User Lifetime Order Tier
     name: Website Sessions by Hour of Day and User Lifetime Order Tier
-    model: thelook
+    model: thelook_partner
     explore: events
     type: looker_column
     fields: [user_order_facts.lifetime_orders_tier, sessions.count, events.event_hour_of_day]
@@ -414,7 +414,7 @@
     height: 5
   - title: Most Correlated Items
     name: Most Correlated Items
-    model: thelook
+    model: thelook_partner
     explore: affinity
     type: looker_grid
     fields: [product_a.item_name, product_b.item_name, affinity.avg_order_affinity,
@@ -505,7 +505,7 @@
     height: 8
   - title: Purchasers of This Brand Also Bought (Brand Affinity)
     name: Purchasers of This Brand Also Bought (Brand Affinity)
-    model: thelook
+    model: thelook_partner
     explore: affinity
     type: looker_grid
     fields: [product_a.brand, product_b.brand, affinity.avg_order_affinity, affinity.avg_user_affinity,
@@ -581,7 +581,7 @@
     height: 8
   - title: Brand Share of Wallet over Customer Lifetime
     name: Brand Share of Wallet over Customer Lifetime
-    model: thelook
+    model: thelook_partner
     explore: orders_with_share_of_wallet_application
     type: looker_line
     fields: [order_items.months_since_signup, order_items_share_of_wallet.brand_share_of_wallet_within_company,
@@ -642,7 +642,7 @@
     height: 6
   - title: Most Popular Categories
     name: Most Popular Categories
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_column
     fields: [products.category, products.department, order_items.total_sale_price]
@@ -743,7 +743,7 @@
     default_value: Calvin Klein
     allow_multiple_values: true
     required: false
-    model: thelook
+    model: thelook_partner
     explore: order_items
     listens_to_filters: []
     field: products.brand
@@ -759,7 +759,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: thelook
+    model: thelook_partner
     explore: order_items
     listens_to_filters: []
     field: users.state

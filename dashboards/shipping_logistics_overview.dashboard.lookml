@@ -12,7 +12,7 @@
   elements:
   - title: Order Shipment Status
     name: Order Shipment Status
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_column
     fields: [order_items.created_date, order_items.status, order_items.order_count]
@@ -58,7 +58,7 @@
     height: 8
   - title: Open Orders >3 Days Old
     name: Open Orders >3 Days Old
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_grid
     fields: [order_items.order_id, users.email, order_items.created_date, order_items.status,
@@ -107,7 +107,7 @@
     height: 8
   - title: Open Orders - Where do we need to ship?
     name: Open Orders - Where do we need to ship?
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_map
     fields: [distribution_centers.location, users.approx_location, order_items.average_days_to_process]
@@ -145,7 +145,7 @@
     height: 8
   - title: Average Shipping Time to Users
     name: Average Shipping Time to Users
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_map
     fields: [users.approx_location, order_items.average_shipping_time]
@@ -182,7 +182,7 @@
     height: 16
   - title: Most Common Shipping Locations
     name: Most Common Shipping Locations
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_map
     fields: [distribution_centers.location, users.approx_location, order_items.order_count]
@@ -222,7 +222,7 @@
     height: 8
   - title: Inventory Aging Report
     name: Inventory Aging Report
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: looker_column
     fields: [inventory_items.days_in_inventory_tier, inventory_items.count]
@@ -269,7 +269,7 @@
     height: 11
   - title: "# Orders Processing"
     name: "# Orders Processing"
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [order_items.order_count]
@@ -311,7 +311,7 @@
     height: 3
   - title: "# Orders Shipped"
     name: "# Orders Shipped"
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [order_items.order_count]
@@ -353,7 +353,7 @@
     height: 3
   - title: Total Amount Processing
     name: Total Amount Processing
-    model: thelook
+    model: thelook_partner
     explore: order_items
     type: single_value
     fields: [order_items.total_sale_price]
@@ -427,7 +427,7 @@
     default_value: ''
     allow_multiple_values: false
     required: false
-    model: thelook
+    model: thelook_partner
     explore: order_items
     listens_to_filters: []
     field: distribution_centers.name

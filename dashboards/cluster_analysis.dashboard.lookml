@@ -6,7 +6,7 @@
   elements:
   - title: Spending Behavior by Clusters
     name: Spending Behavior by Clusters
-    model: thelook
+    model: thelook_partner
     explore: kmeans_model5
     type: looker_grid
     fields: [kmeans_model5.feature, kmeans_model5.centroid_id, kmeans_model5.avg_qty]
@@ -77,7 +77,7 @@
     height: 6
   - title: "# of Customers Per Cluster"
     name: "# of Customers Per Cluster"
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_bar
     fields: [ecomm_predict.centroid_id, ecomm_predict.count]
@@ -149,7 +149,7 @@
     height: 8
   - title: Orders vs Web Events
     name: Orders vs Web Events
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_column
     fields: [ecomm_predict.centroid_id, ecomm_predict.event_usage, ecomm_predict.purchases]
@@ -228,7 +228,7 @@
     height: 8
   - title: 'Cluster #2'
     name: 'Cluster #2'
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [ecomm_predict.avg_unit_price]
@@ -319,7 +319,7 @@
     height: 2
   - title: 'Cluster #1'
     name: 'Cluster #1'
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [ecomm_predict.avg_unit_price]
@@ -410,7 +410,7 @@
     height: 2
   - title: 'Cluster #3'
     name: 'Cluster #3'
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [ecomm_predict.avg_unit_price]
@@ -501,7 +501,7 @@
     height: 2
   - title: 'Cluster #4'
     name: 'Cluster #4'
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [ecomm_predict.avg_unit_price]
@@ -592,7 +592,7 @@
     height: 2
   - title: 'Cluster #5'
     name: 'Cluster #5'
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: single_value
     fields: [ecomm_predict.avg_unit_price]
@@ -709,7 +709,7 @@
     height: 2
   - title: Age Distribution
     name: Age Distribution
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_donut_multiples
     fields: [ecomm_predict.centroid_id, users.gender, users.count]
@@ -783,7 +783,7 @@
     height: 9
   - title: 'Age Distribution '
     name: 'Age Distribution '
-    model: thelook
+    model: thelook_partner
     explore: ecomm_predict
     type: looker_bar
     fields: [ecomm_predict.centroid_id, users.age_tier, users.count]
