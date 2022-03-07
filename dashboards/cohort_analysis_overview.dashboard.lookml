@@ -686,11 +686,11 @@
       padding: 5px 15px; border-top: solid 1px #4285F4; border-left: solid 1px #4285F4;\
       \ border-right: solid 1px #4285F4; border-radius: 5px 5px 0 0; float: left;\
       \ line-height: 40px; font-weight: bold; background-color: #eaf1fe;\"  \n href=\"\
-      /dashboards-next/thelook::cohort_analysis_overview\">Cohort Analysis</a>\n\n\
+      /dashboards-next/thelook_partner::cohort_analysis_overview\">Cohort Analysis</a>\n\n\
       \  <a style=\"padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left;\
-      \ line-height: 40px;\" href=\"/dashboards-next/thelook::cluster_analysis_overview\"\
+      \ line-height: 40px;\" href=\"/dashboards-next/thelook_partner::cluster_analysis_overview\"\
       >Cluster Analysis</a>\n\n  <a style=\"padding: 5px 15px; border-bottom: solid\
-      \ 1px #4285F4; float: left; line-height: 40px;\" href=\"/dashboards-next/thelook::training_evaluation_overview\"\
+      \ 1px #4285F4; float: left; line-height: 40px;\" href=\"/dashboards-next/thelook_partner::training_evaluation_overview\"\
       >\n\nTraining Evaluation</a>\n\n</nav>\n\n</div>"
     row: 0
     col: 0
