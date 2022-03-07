@@ -9,9 +9,6 @@
     title_color: "#3a4245"
     show_filters_bar: false
     tile_text_color: "#3a4245"
-    tile_separator_color: "#faf3f3"
-    tile_border_radius: 5
-    show_tile_shadow: false
     text_tile_text_color: "#556d7a"
   elements:
   - title: Total Orders
