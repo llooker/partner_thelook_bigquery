@@ -63,6 +63,7 @@ explore: order_items {
   join: discounts {
     view_label: "Discounts"
     type: inner
+    relationship: many_to_one
     sql_on: ${products.id} = ${discounts.product_id} ;;
   }
 
