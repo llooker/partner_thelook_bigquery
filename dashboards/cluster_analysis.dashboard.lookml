@@ -697,9 +697,9 @@
     body_text: |2-
       <div style="border-bottom: solid 1px #4285F4;">
       <nav style="font-size: 18px; padding: 5px 10px 0 10px; height: 60px">
-        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;" href="/dashboards-next/thelook::cohort_analysis_overview">Cohort Analysis</a>
-        <a style="padding: 5px 15px; border-top: solid 1px #4285F4; border-left: solid 1px #4285F4; border-right: solid 1px #4285F4; border-radius: 5px 5px 0 0; float: left; line-height: 40px; font-weight: bold; background-color: #eaf1fe;"  href="/dashboards-next/thelook::cluster_analysis_overview">Cluster Analysis</a>
-        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;" href="/dashboards-next/thelook::training_evaluation_overview">
+        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;" href="/dashboards-next/thelook_partner::cohort_analysis_overview">Cohort Analysis</a>
+        <a style="padding: 5px 15px; border-top: solid 1px #4285F4; border-left: solid 1px #4285F4; border-right: solid 1px #4285F4; border-radius: 5px 5px 0 0; float: left; line-height: 40px; font-weight: bold; background-color: #eaf1fe;"  href="/dashboards-next/thelook_partner::cluster_analysis_overview">Cluster Analysis</a>
+        <a style="padding: 5px 15px; border-bottom: solid 1px #4285F4; float: left; line-height: 40px;" href="/dashboards-next/thelook_partner::training_evaluation_overview">
       Training Evaluation</a>
       </nav>
       </div>
