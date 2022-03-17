@@ -1,7 +1,6 @@
 - dashboard: customer_lookup
   title: Customer Lookup
   layout: newspaper
-  preferred_viewer: dashboards
   embed_style:
     background_color: "#f6f8fa"
     show_title: true

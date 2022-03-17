@@ -2,7 +2,6 @@
 - dashboard: training_evaluation_overview
   title: Training Evaluation Overview
   layout: newspaper
-  preferred_viewer: dashboards-next
   crossfilter_enabled: true
   elements:
   - title: Cluster Size by Iteration

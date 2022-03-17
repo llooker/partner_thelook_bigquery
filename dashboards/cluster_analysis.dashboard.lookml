@@ -2,7 +2,6 @@
 - dashboard: cluster_analysis_overview
   title: Cluster Analysis Overview
   layout: newspaper
-  preferred_viewer: dashboards-next
   elements:
   - title: Spending Behavior by Clusters
     name: Spending Behavior by Clusters
