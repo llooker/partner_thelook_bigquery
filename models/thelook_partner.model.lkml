@@ -329,6 +329,9 @@ label: "E-Comm Cohort Analysis Training"
 
 explore: kmeans_model5 {}
 
+explore: final_explore_name {
+  from: users
+}
 
 explore: ecomm_predict {
   label: "(8) Cohort Analysis"
