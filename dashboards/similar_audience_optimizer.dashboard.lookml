@@ -1,7 +1,6 @@
 - dashboard: similar_audience_optimizer
   title: Similar Audience Optimizer
   layout: newspaper
-  preferred_viewer: dashboards-next
   query_timezone: user_timezone
   embed_style:
     background_color: "#f6f8fa"

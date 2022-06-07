@@ -2,7 +2,6 @@
 - dashboard: cohort_analysis_overview
   title: Cohort Analysis Overview
   layout: newspaper
-  preferred_viewer: dashboards-next
   elements:
   - title: Spend by Region
     name: Spend by Region
