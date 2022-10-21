@@ -81,7 +81,7 @@ view: order_items {
         name: "Message"
         type: textarea
         default: "Hey,
-        Could you check out order #{{value}}. It's saying its {{status._value}},
+        Could you check out order #{{value}}. It's saying its {{order_items.status._value}},
         but the customer is reaching out to us about it.
         ~{{ _user_attributes.first_name}}"
       }
