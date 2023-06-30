@@ -129,6 +129,7 @@ view: users {
     label: "Zip"
     type: zipcode
     sql: ${TABLE}.zip ;;
+    drill_fields: [name]
   }
 
   dimension: uk_postcode {
