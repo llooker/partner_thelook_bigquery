@@ -219,6 +219,18 @@ view: order_items {
     sql: ${TABLE}.status ;;
   }
 
+  dimension: indicator {
+    type: string
+    sql: ${gross_margin} ;;
+    html:
+        {% if value > 10 %}
+          <p><img src="https://findicons.com/files/icons/573/must_have/48/check.png" height=20 width=20></p>
+        {% else %}
+           <p><img src="https://findicons.com/files/icons/719/crystal_clear_actions/64/cancel.png" height=20 width=20></p>
+        {% endif %}
+      ;;
+    }
+
   dimension: days_to_process {
     label: "Days to Process"
     type: number
